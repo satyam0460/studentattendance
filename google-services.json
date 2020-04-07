@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "144633925476",
+    "firebase_url": "https://attendance-manager-bc4a3.firebaseio.com",
+    "project_id": "attendance-manager-bc4a3",
+    "storage_bucket": "attendance-manager-bc4a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144633925476:android:a19178ae32e67131aab471",
+        "android_client_info": {
+          "package_name": "inc.satyam.attendancemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144633925476-5dkr6mehqjapdvmo1p25j7cvornk90na.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "inc.satyam.attendancemanager",
+            "certificate_hash": "117e335acc97f27db1db0089a97575e267db0455"
+          }
+        },
+        {
+          "client_id": "144633925476-r3im130i5t8d88b672gmjql67jn4tv63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCE4Pgw5EeRY4S7GTvYM5sijTKhw8VMlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144633925476-r3im130i5t8d88b672gmjql67jn4tv63.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Attendance Manager</string>
+    <string-array name="branches">
+        <item>CSE</item>
+        <item>PIE</item>
+        <item>EE</item>
+        <item>ECE</item>
+        <item>MME</item>
+        <item>ME</item>
+        <item>CE</item>
+    </string-array>
+</resources>
