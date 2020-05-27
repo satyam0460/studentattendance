@@ -8,8 +8,4 @@
         android:title="Attendance"
         android:icon="@drawable/ic_attendance"
         />
-    <item android:id="@+id/time"
-        android:title="Time-Table"
-        android:icon="@drawable/ic_time_table"
-        />
 </menu>

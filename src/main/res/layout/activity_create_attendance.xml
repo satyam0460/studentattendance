@@ -51,7 +51,7 @@
         android:id="@+id/attendance1"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:layout_below="@+id/subject1"
+        android:layout_below="@+id/subject2"
         />
     <TextView
         android:layout_width="match_parent"
@@ -63,7 +63,7 @@
         android:id="@+id/attendance2"
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
-        android:layout_below="@id/subject1"
+        android:layout_below="@id/subject2"
         android:layout_toRightOf="@id/attendance1"
         />
     <TextView

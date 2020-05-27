@@ -83,6 +83,17 @@
         android:layout_above="@+id/txt2"
         android:textSize="20dp"
         android:textColor="#000000"
+        android:id="@+id/txt9"
         android:textStyle="italic"
         android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:textStyle="italic"
+        android:id="@+id/forgot"
+        android:layout_above="@+id/txt9"/>
 </RelativeLayout>

@@ -30,6 +30,7 @@ public class profile extends Fragment {
     String s1,s2,s3,s4;
     ImageView imgv;
     ProgressDialog prg;
+    Button btn1;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -42,13 +43,14 @@ public class profile extends Fragment {
         uid=mAuth.getCurrentUser().getUid();
         prg=new ProgressDialog(getContext());
         prg.setTitle("Fetching Your Details...");
+        btn1=v.findViewById(R.id.btn1);
         prg.setMessage("Please Wait");
         prg.setCanceledOnTouchOutside(false);
         prg.show();
         imgv=v.findViewById(R.id.imgv);
         dbreff= FirebaseDatabase.getInstance().getReference().child("Student").child(uid);
         dbreff.keepSynced(true);
-        dbreff.addListenerForSingleValueEvent(new ValueEventListener() {
+        dbreff.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 s1=dataSnapshot.child("Name").getValue().toString();
@@ -67,6 +69,18 @@ public class profile extends Fragment {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
+            }
+        });
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(),UpdateProfile.class);
+                intent.putExtra("name",s1);
+                intent.putExtra("branch",s2);
+                intent.putExtra("sem",s3);
+                intent.putExtra("roll",s4);
+                startActivity(intent);
+
             }
         });
         return v;

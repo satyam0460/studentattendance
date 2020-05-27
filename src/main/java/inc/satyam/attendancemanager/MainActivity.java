@@ -18,7 +18,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
-    TextView txt1;
+    TextView txt1, txt2;
     FirebaseAuth mAuth;
     Button btn1;
     EditText edt1, edt2;
@@ -30,8 +30,16 @@ public class MainActivity extends AppCompatActivity {
         txt1=findViewById(R.id.txt2);
         mAuth=FirebaseAuth.getInstance();
         btn1=findViewById(R.id.btn1);
+        txt2=findViewById(R.id.forgot);
         edt1=findViewById(R.id.edt1);
         edt2=findViewById(R.id.edt2);
+        txt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,ForgotPassword.class);
+                startActivity(intent);
+            }
+        });
         txt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
